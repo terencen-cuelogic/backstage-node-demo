@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+    name: backstage-node-demo
+    description: A Demo Component for showcasing Node.js app
+    annotations:
+        backstage.io/techdocs-ref: dir:.
+    tags:
+        - node.js
+spec:
+    type: boilerplate
+    lifecycle: experimental
+    owner: terence-nero
+    system: project-x
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+    name: project-x
+    description: System to demo backstage
+spec:
+    owner: demo-team
+    domain: demo
